@@ -8,11 +8,11 @@ const errorCase = document.querySelector('.errorCase')
 const footer = document.querySelector('.foot')
 const city = document.querySelector('.js-search')
 
-async function wheather (){
+async function weather (){
   const conditions = document.querySelector('.conditions')
   const searchCity = city.value.toLowerCase()
   try{
-  const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=42a990ccbe094191a0165256241103&q=${searchCity}`)
+  const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=42a990ccbe094191a0165256241103&q=${searchCity}`)
   
   if(!response.ok){
     errorCase.style.display = 'block'
@@ -42,7 +42,7 @@ async function wheather (){
 submit.addEventListener('click', () => {
  console.log(city.value)
   if(city.value){
-  wheather()
+  weather()
  }
   
  
