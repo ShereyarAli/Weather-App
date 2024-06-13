@@ -1,0 +1,102 @@
+body{
+  font-family: montserrat, arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-image: linear-gradient(to right top, rgb(8, 218, 255), rgb(169, 255, 10));
+}
+main{
+  background-image: linear-gradient(to bottom  right, rgb(230, 43, 152), rgb(0, 247, 255)) ;
+  border-radius: 15px;
+  box-shadow:-2px 2px 20px 5px  rgb(0, 0, 0);
+  padding-block: 30px;
+  min-width: 200px;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchContainer{
+  
+ min-width: 400px; 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.search{
+  min-height: 40px;
+  min-width: 60%;
+  border: none;
+  border-radius: 20px;
+}
+.searchBtn{
+  margin-left: 5px;
+  width:50px;
+  padding-block: 15px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+.searchBtn:hover{
+  cursor: pointer;
+  background-color: rgb(231, 229, 229);
+  transition: 0.3s;
+}
+.search-icon{
+  width:40%;
+  align-self: center;
+}
+.wheatherInfo{
+
+  display: flex;
+  flex-direction: column;
+
+}
+.wheatherPic{
+  max-width: 150px;
+  min-height: auto;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.searchedInfo{
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1px;
+}
+.conditions{
+  font-size: 35px;
+}
+.cityName{
+  font-size: 20px;
+}
+footer{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.windy,.Humidity{
+  font-size: 10px;
+}
+
+.wind{
+  width: 20px;
+  
+
+}
+.humid{
+  width: 20px;
+}
+.errorCase{
+  display: none;
+}
